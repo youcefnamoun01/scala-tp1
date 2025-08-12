@@ -1,0 +1,54 @@
+# Scala et sbt
+*.class
+*.log
+target/
+project/target/
+project/project/
+.scala_dependencies
+.worksheet
+
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/*
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+project/local-plugins.sbt
+.sbt-scripted/
+local.sbt
+
+# Metals (Scala Language Server)
+.metals/
+.bloop/
+metals.sbt
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*~
+*.swp
+*.tmp
+
+# Data files (utile pour le data processing)
+data/
+*.csv
+*.json
+*.parquet
+!sample_data/
+
+# Environment variables
+.env
+.env.local
