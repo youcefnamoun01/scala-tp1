@@ -26,6 +26,14 @@ version := "1.0"
 // You can define other libraries as dependencies in your build like this:
 
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.3.0"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.5.1"
+
+javaOptions += "--add-exports=java.base/sun.nio.ch=ALL-UNNAMED"
+
+fork := true
+
+libraryDependencies += "com.nrinaudo" %% "kantan.csv" % "0.6.1"
+
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies
