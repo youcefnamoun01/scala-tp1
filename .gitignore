@@ -52,3 +52,5 @@ data/
 # Environment variables
 .env
 .env.local
+
+*.jar
