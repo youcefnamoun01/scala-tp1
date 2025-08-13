@@ -68,11 +68,11 @@ object SalesDataProcessing {
     salesByMonth.show()
 
     // Sauvegarde
-    cleanedDF.write.mode("overwrite").option("header", "true").csv("./data/cleaned_data")
-    topProducts.write.option("header", "true").csv("data/top_products")
-    salesByMonth.write.option("header", "true").csv("data/salesByMonth")
+    cleanedDF.write.mode("overwrite").option("header", "true").csv("data/cleaned_data")
+    topProducts.write.mode("overwrite").option("header", "true").csv("data/topProducts")
+    salesByMonth.write.mode("overwrite").option("header", "true").csv("data/salesByMonth")
 
-
+    // Fermeture de la SparkSession
     spark.stop()
 
   }
