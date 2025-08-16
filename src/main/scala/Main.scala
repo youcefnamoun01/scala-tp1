@@ -20,6 +20,7 @@ object SalesDataProcessing {
       .option("inferSchema", "true")
       .csv("./data/sales_data.csv")
 
+    // Affichage du dataframe
     println("DataFrame Schema:")
     println(salesDF.printSchema())
 
