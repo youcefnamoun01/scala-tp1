@@ -4,6 +4,7 @@
 target/
 project/target/
 project/project/
+resources/
 .scala_dependencies
 .worksheet
 
