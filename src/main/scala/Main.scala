@@ -11,6 +11,7 @@ object SalesDataProcessing {
       .appName("Sales Data Processing")
       .master("local[*]")
       .getOrCreate()
+
     spark.sparkContext.setLogLevel("WARN")
 
     // Lecture du fichier CSV
@@ -19,10 +20,9 @@ object SalesDataProcessing {
       .option("inferSchema", "true")
       .csv("./data/sales_data.csv")
 
-    // Affichage du dataframe
     println("DataFrame Schema:")
     println(salesDF.printSchema())
-    
+
     println("DataFrame values:")
     print(salesDF.show(5))
 
