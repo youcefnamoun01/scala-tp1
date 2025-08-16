@@ -4,6 +4,7 @@
 target/
 project/target/
 project/project/
+resources/
 .scala_dependencies
 .worksheet
 
@@ -52,3 +53,5 @@ data/
 # Environment variables
 .env
 .env.local
+
+*.jar

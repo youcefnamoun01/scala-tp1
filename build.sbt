@@ -24,9 +24,14 @@ version := "1.0"
 
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
+    
 
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.3.0"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.5.1"
+libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "3.3.4"
+libraryDependencies += "com.typesafe" % "config" % "1.4.3"
+
+
 
 javaOptions += "--add-exports=java.base/sun.nio.ch=ALL-UNNAMED"
 

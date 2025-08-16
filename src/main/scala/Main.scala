@@ -1,10 +1,13 @@
 import org.apache.spark.sql.{SparkSession, DataFrame}
 import org.apache.spark.sql.functions._
 import utils.DataFrameUtils._
+import com.typesafe.config.ConfigFactory
+import org.apache.spark.sql.SparkSession
 
 object SalesDataProcessing {
 
   def main(args: Array[String]): Unit = {
+    val config = ConfigFactory.load()
 
     // Initialisation SparkSession
     val spark = SparkSession.builder()
@@ -14,18 +17,25 @@ object SalesDataProcessing {
 
     spark.sparkContext.setLogLevel("WARN")
 
-    // Lecture du fichier CSV
+    // Chargement des variables de configuration
+    val hadoopConf = spark.sparkContext.hadoopConfiguration
+    hadoopConf.set("fs.s3a.access.key", config.getString("db.AWS_ACCESS_KEY_ID"))
+    hadoopConf.set("fs.s3a.secret.key", config.getString("db.AWS_SECRET_ACCESS_KEY"))
+    hadoopConf.set("fs.s3a.endpoint", s"s3.${config.getString("db.AWS_REGION")}.amazonaws.com")
+    val bucket = config.getString("db.BUCKET_NAME")
+
+    // Chargement du fichier CSV à partir de aws S3
     val salesDF = spark.read
       .option("header", "true")
       .option("inferSchema", "true")
-      .csv("./data/sales_data.csv")
+      .csv(s"s3a://$bucket/sales_data.csv")
 
     // Affichage du dataframe
     println("DataFrame Schema:")
-    println(salesDF.printSchema())
+    salesDF.printSchema()
 
     println("DataFrame values:")
-    print(salesDF.show(5))
+    salesDF.show(5)
 
     // Nettoyage des valeurs nulles
     val nullCounts = check_nulls(salesDF)
@@ -68,13 +78,15 @@ object SalesDataProcessing {
     println("Nombre de ventes par mois :")
     salesByMonth.show()
 
-    // Sauvegarde
-    cleanedDF.write.mode("overwrite").option("header", "true").csv("data/cleaned_data")
-    topProducts.write.mode("overwrite").option("header", "true").csv("data/topProducts")
-    salesByMonth.write.mode("overwrite").option("header", "true").csv("data/salesByMonth")
+    // Sauvegarde dans aws S3
+    cleanedDF.write.mode("overwrite").option("header", "true").csv(s"s3a://$bucket/reporting/cleaned_data")
+    topProducts.write.mode("overwrite").option("header", "true").csv(s"s3a://$bucket/reporting/topProducts")
+    salesByMonth.write.mode("overwrite").option("header", "true").csv(s"s3a://$bucket/reporting/salesByMonth")
 
     // Fermeture de la SparkSession
     spark.stop()
 
+
+   
   }
 }
