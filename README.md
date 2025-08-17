@@ -1,13 +1,10 @@
 # TP Scala – Data Processing with Spark
 
-## 📌 Description
+Ce projet est un **TP en Scala** dont l’objectif est de traiter un jeu de données de ventes (`sale_data.csv`) à l’aide du langage de programmation **Scala** et du framework **Apache Spark**.
 
-Ce projet est un **TP de Big Data en Scala** dont l’objectif est de traiter un jeu de données de ventes (`sale_data.csv`) à l’aide d’**Apache Spark**.  
-Il met en pratique les concepts de **data cleaning**, **agrégation** et **analyse de données** en Scala.
+## Travail demandé
 
-## 🎯 Objectifs du projet
-
-Le programme Scala doit :
+Un programme Scala qui doit :
 
 1. Lire le dataset `sale_data.csv` et le charger dans un **DataFrame** ou **Dataset**.
 2. Nettoyer les données en supprimant les valeurs **nulles** ou manquantes.
@@ -19,10 +16,13 @@ Le programme Scala doit :
    - `topProducts.csv` : top 5 des produits les plus rentables
    - `salesByMonth.csv` : ventes moyennes par mois
 
-## 🛠️ Technologies utilisées
+## Outils utilisés
 
-- **Scala**
-- **Apache Spark** (SQL & DataFrame API)
-- **sbt** pour la gestion des dépendances et la compilation
-
-## 📂 Structure du projet
+- **Scala** : langage principal du projet
+- **VS Code** : éditeur de code
+- **Metals** : extension VS Code pour créer et gérer des projets Scala avec toutes les dépendances
+- **sbt** : outil de build et gestion des dépendances
+- **Apache Spark** (`spark-core`, `spark-sql`) : traitement et analyse des données
+- **Hadoop** : support pour les systèmes de fichiers distribués
+- **AWS (hadoop-aws)** : compatibilité avec le stockage S3
+- **Typesafe Config** : gestion des fichiers de configuration (`application.conf`)
