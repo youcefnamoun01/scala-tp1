@@ -54,4 +54,4 @@ Main.scala
 
 2- Chargment du fichier `sale_data.csv` à partir d'une bucket S3
 
-https://kuikopsimages.s3.eu-north-1.amazonaws.com/aws-s3-1.png
+![bucket](https://kuikopsimages.s3.eu-north-1.amazonaws.com/aws-s3-1.png)
