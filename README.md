@@ -60,18 +60,18 @@ src/main/scala/Main.scala
 
 ![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/clean.png)
 
-4- Calcule du total sales (chiffre d’affaires) par catégorie de produit
+4- Calcule du total sales (chiffre d’affaires) par catégorie de produit puis charger les données dans un nouveau dataframe
 
 ![totale-sales](https://kuikopsimages.s3.eu-north-1.amazonaws.com/totale-sales.png)
 
-5- Calcule des 5 Top produits par ventes
+5- Calcule des 5 Top produits par ventes puis charger les données dans un nouveau dataframe
 
 ![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/top-produits.png)
 
-6- Calcule des totales des ventes par mois
+6- Calcule des totales des ventes par mois puis charger les données dans un nouveau dataframe
 
 ![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/sales-monthly.png)
 
-7- Calcule des totales des ventes par mois
+7- Uploader les datasets (cleanedDF, topProducts, salesByMonth) dans des fichiers csv (cleaned_data.csv, topProducts.csv, salesByMonth.csv) sur une bucket s3
 
 ![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/upload.png)
