@@ -30,19 +30,17 @@ Un programme Scala qui doit :
 ## Structure du projet
 
 <pre>TP-Scala/
-
-│── data/
-│ └── sale_data.csv # Dataset source
 │
 │── src/
 │ └── main/scala/
-│ └── Main.scala # Code principal
-│
-│── output/
-│ ├── cleaned_data.csv
-│ ├── topProducts.csv
-│ └── salesByMonth.csv
+│              └── Main.scala # Code principal
+│              └── utils
+│                 └── utils # Fonctions utilitaires
+│    └── ressources
+│       └── application.config # Fichier de configuration d'environnement
 │
 │── build.sbt # Fichier de configuration SBT
 │── README.md # Documentation du projet
+│── gitignore# Fichier pour ignorer la configuration
+
  </pre>
