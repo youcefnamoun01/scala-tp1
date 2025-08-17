@@ -63,3 +63,7 @@ Main.scala
 4- Calcule du total sales (chiffre d’affaires) par catégorie de produit
 
 ![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/totale-sales.png)
+
+5- Calcule des 5 Top produits par ventes
+
+![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/top-produits.png)
