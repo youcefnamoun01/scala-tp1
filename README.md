@@ -97,3 +97,7 @@ Un programme Scala qui doit :
 1- Ajout des packages
 
 ![sbt](https://kuikopsimages.s3.eu-north-1.amazonaws.com/sbt.png)
+
+## Résultats
+
+![result](https://kuikopsimages.s3.eu-north-1.amazonaws.com/result.png)
