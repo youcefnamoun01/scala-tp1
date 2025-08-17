@@ -26,3 +26,21 @@ Un programme Scala qui doit :
 - **Hadoop** : support pour les systèmes de fichiers distribués
 - **AWS (hadoop-aws)** : compatibilité avec le stockage S3
 - **Typesafe Config** : gestion des fichiers de configuration (`application.conf`)
+
+## Structure du projet
+
+TP-Scala/
+│── data/
+│ └── sale_data.csv # Dataset source
+│
+│── src/
+│ └── main/scala/
+│ └── Main.scala # Code principal
+│
+│── output/
+│ ├── cleaned_data.csv
+│ ├── topProducts.csv
+│ └── salesByMonth.csv
+│
+│── build.sbt # Fichier de configuration SBT
+│── README.md # Documentation du projet
