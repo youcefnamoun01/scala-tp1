@@ -55,7 +55,7 @@ object SalesDataProcessing {
       .agg(sum("SALES").alias("TOTAL_SALES"))
       .orderBy(desc("TOTAL_SALES"))
     println("Total sales revenue par categorie de produit :")
-    
+
     totalSalesByCategory.show()
 
     // Calcule des 5 Top produits par ventes
@@ -67,7 +67,7 @@ object SalesDataProcessing {
     println("Top 5 produits par ventes :")
     topProducts.show()
     
-    // calculer le nombre de ventes par mois
+    // calculer du totale des ventes par mois
     val withMonth = cleanedDF.withColumn(
       "month",
       month(to_timestamp(col("ORDERDATE"), "M/d/yyyy H:mm"))
@@ -76,7 +76,7 @@ object SalesDataProcessing {
       .agg(sum("SALES").alias("TOTAL_SALES"))
       .orderBy("month")
 
-    println("Nombre de ventes par mois :")
+    println("Totale des ventes par mois :")
     salesByMonth.show()
 
     // Sauvegarde dans aws S3

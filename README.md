@@ -46,7 +46,7 @@ Un programme Scala qui doit :
 
 ## Contributions
 
-Main.scala
+src/main/scala/Main.scala
 
 1- Initialisation de la SparkSession
 
@@ -62,8 +62,12 @@ Main.scala
 
 4- Calcule du total sales (chiffre d’affaires) par catégorie de produit
 
-![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/totale-sales.png)
+![totale-sales](https://kuikopsimages.s3.eu-north-1.amazonaws.com/totale-sales.png)
 
 5- Calcule des 5 Top produits par ventes
 
-![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/top-produits.png)
+![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/top-produits.png)
+
+6- Calcule des totales des ventes par mois
+
+![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/sales-monthly.png)
