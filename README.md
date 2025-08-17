@@ -81,3 +81,9 @@ Un programme Scala qui doit :
 1- Checker les valeurs nulls dans un dataset
 
 ![check-nulls](https://kuikopsimages.s3.eu-north-1.amazonaws.com/check-nulls.png)
+
+`src/main/resources/application.config`
+
+1- Variables de configurations AWS
+
+![AWS](https://kuikopsimages.s3.eu-north-1.amazonaws.com/config.png)
