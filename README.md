@@ -59,3 +59,7 @@ Main.scala
 3- Nettoyer les données en supprimant les valeurs nulles puis charger les données dans un nouveau dataframe
 
 ![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/clean.png)
+
+4- Calcule du total sales (chiffre d’affaires) par catégorie de produit
+
+![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/totale-sales.png)

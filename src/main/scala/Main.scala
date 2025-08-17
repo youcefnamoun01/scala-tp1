@@ -55,6 +55,7 @@ object SalesDataProcessing {
       .agg(sum("SALES").alias("TOTAL_SALES"))
       .orderBy(desc("TOTAL_SALES"))
     println("Total sales revenue par categorie de produit :")
+    
     totalSalesByCategory.show()
 
     // Calcule des 5 Top produits par ventes
