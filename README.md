@@ -51,3 +51,7 @@ Main.scala
 1- Initialisation de la SparkSession
 
 ![Spark](https://kuikopsimages.s3.eu-north-1.amazonaws.com/spark1.png)
+
+2- Chargment du fichier `sale_data.csv` à partir d'une bucket S3
+
+https://kuikopsimages.s3.eu-north-1.amazonaws.com/aws-s3-1.png
