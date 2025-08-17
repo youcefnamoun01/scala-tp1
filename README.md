@@ -46,7 +46,7 @@ Un programme Scala qui doit :
 
 ## Contributions
 
-src/main/scala/Main.scala
+`src/main/scala/Main.scala`
 
 1- Initialisation de la SparkSession
 
@@ -74,4 +74,10 @@ src/main/scala/Main.scala
 
 7- Uploader les datasets (cleanedDF, topProducts, salesByMonth) dans des fichiers csv (cleaned_data.csv, topProducts.csv, salesByMonth.csv) sur une bucket s3
 
-![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/upload.png)
+![upload](https://kuikopsimages.s3.eu-north-1.amazonaws.com/upload.png)
+
+`src/main/scala/utils/DataFrameUtils.scala`
+
+1- Checker les valeurs nulls dans un dataset
+
+![check-nulls](https://kuikopsimages.s3.eu-north-1.amazonaws.com/check-nulls.png)
