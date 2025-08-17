@@ -41,6 +41,12 @@ Un programme Scala qui doit :
 │
 │── build.sbt # Fichier de configuration SBT
 │── README.md # Documentation du projet
-│── gitignore# Fichier pour ignorer la configuration
-
+│── gitignore # Fichiers et dossiers à ignorer
  </pre>
+
+## Contributions
+
+Main.scala
+1- Initialisation de la SparkSession
+
+![Spark](https://<bucket-name>.s3.<region>.amazonaws.com/images/spark1.png)
