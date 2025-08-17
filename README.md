@@ -29,7 +29,8 @@ Un programme Scala qui doit :
 
 ## Structure du projet
 
-TP-Scala/
+<pre>TP-Scala/
+
 │── data/
 │ └── sale_data.csv # Dataset source
 │
@@ -44,3 +45,4 @@ TP-Scala/
 │
 │── build.sbt # Fichier de configuration SBT
 │── README.md # Documentation du projet
+ </pre>
