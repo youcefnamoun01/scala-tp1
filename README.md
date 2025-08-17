@@ -52,6 +52,10 @@ Main.scala
 
 ![Spark](https://kuikopsimages.s3.eu-north-1.amazonaws.com/spark1.png)
 
-2- Chargment du fichier `sale_data.csv` à partir d'une bucket S3
+2- Chargment du fichier `sale_data.csv` à partir d'une bucket S3 dans un dataframe Spark
 
 ![bucket](https://kuikopsimages.s3.eu-north-1.amazonaws.com/aws-s3-1.png)
+
+3- Nettoyer les données en supprimant les valeurs nulles puis charger les données dans un nouveau dataframe
+
+![clean-data](https://kuikopsimages.s3.eu-north-1.amazonaws.com/clean.png)
