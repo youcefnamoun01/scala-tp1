@@ -47,6 +47,7 @@ Un programme Scala qui doit :
 ## Contributions
 
 Main.scala
+
 1- Initialisation de la SparkSession
 
-![Spark](https://<bucket-name>.s3.<region>.amazonaws.com/images/spark1.png)
+![Spark](https://kuikopsimages.s3.eu-north-1.amazonaws.com/spark1.png)
