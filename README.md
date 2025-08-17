@@ -101,3 +101,5 @@ Un programme Scala qui doit :
 ## Résultats
 
 ![result](https://kuikopsimages.s3.eu-north-1.amazonaws.com/result.png)
+
+![reporting](https://kuikopsimages.s3.eu-north-1.amazonaws.com/reporting.png)
