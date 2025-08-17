@@ -35,7 +35,7 @@ Un programme Scala qui doit :
 │ └── main/scala/
 │              └── Main.scala # Code principal
 │              └── utils
-│                 └── utils # Fonctions utilitaires
+│                 └── DataFrameUtils.scala # Fonctions utilitaires
 │    └── ressources
 │       └── application.config # Fichier de configuration d'environnement
 │
