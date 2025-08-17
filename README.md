@@ -71,3 +71,7 @@ src/main/scala/Main.scala
 6- Calcule des totales des ventes par mois
 
 ![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/sales-monthly.png)
+
+7- Calcule des totales des ventes par mois
+
+![top-produits](https://kuikopsimages.s3.eu-north-1.amazonaws.com/upload.png)
