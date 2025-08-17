@@ -87,3 +87,7 @@ Un programme Scala qui doit :
 1- Variables de configurations AWS
 
 ![AWS](https://kuikopsimages.s3.eu-north-1.amazonaws.com/config.png)
+
+1- Chargement des variables de configurations AWS
+
+![VAR-AWS](https://kuikopsimages.s3.eu-north-1.amazonaws.com/var-config.png)
