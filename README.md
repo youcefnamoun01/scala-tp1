@@ -100,12 +100,15 @@ Un programme Scala qui doit :
 
 ## Lancer le projet
 1- Clonner le projet
+
 `git clone https://github.com/youcefnamoun01/scala-tp1.git`
 
-2- Ajouter les variables de configurations dans le fichier `main/resources/application.config`
+2- Ajouter les variables de configurations AWS dans le fichier `main/resources/application.config`
+
 ![aws-config](https://kuikopsimages.s3.eu-north-1.amazonaws.com/aws-config.png)
 
 3- Executer la commande
+
 `sbt run`
 
 
